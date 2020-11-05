@@ -1,19 +1,16 @@
 import { Link } from "react-router-dom";
+import products from "../../data/products.json";
 
 function ProductsPage() {
     return (
         <main>
             <h1>Products</h1>
             <ul>
-                <li>
-                    <Link to="/product/chair">Chair</Link>
-                </li>
-                <li>
-                    <Link to="/product/table">Table</Link>
-                </li>
-                <li>
-                    <Link to="/product/desk">Desk</Link>
-                </li>
+                {products.map((product) => (
+                    <li key={product.id}>
+                        <Link to={"/product/" + product.id}>{product.name}</Link>
+                    </li>
+                ))}
             </ul>
         </main>
     );

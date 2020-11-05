@@ -1,0 +1,20 @@
+[
+    {
+        "id": "001",
+        "name": "Camera",
+        "description": "This photographer's favourite will help you capture your favourite moments.",
+        "icon": "📷"
+    },
+    {
+        "id": "002",
+        "name": "Telescope",
+        "description": "Gaze into the cosmos and its many stars, planets and moons. They're far!",
+        "icon": "🔭"
+    },
+    {
+        "id": "003",
+        "name": "Television",
+        "description": "Need to kick back and relax? Then this is the big glowing box for you.",
+        "icon": "📺"
+    }
+]
