@@ -14,6 +14,7 @@ function ProductPage(props) {
             </h1>
             <p>{product.description}</p>
             <p>Product ID: {product.id}</p>
+            <p>Category: {product.category}</p>
         </main>
     );
 }
