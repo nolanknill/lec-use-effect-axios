@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 function ProductPage(props) {
     const product = products.find((product) => product.id === props.match.params.productId);
 
-    // Diving deeper: redirect to Products page if no product found instead of erroring
+    // Redirect to Products page if no product found instead of erroring
     if (!product) return <Redirect to="/products" />;
 
     return (
