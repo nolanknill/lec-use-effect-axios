@@ -16,7 +16,7 @@ function ProductPage(props) {
             <p>Product ID: {product.id}</p>
             <p>Category: {product.category}</p>
 
-            {/* Diving deeper: Nested route for technical specifications */}
+            {/* Nested route for technical specifications */}
             <Link to={`/product/${product.id}/technical-specifications`}>
                 See technical specifications
             </Link>
