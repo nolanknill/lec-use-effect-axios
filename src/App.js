@@ -12,8 +12,10 @@ function App() {
             <Switch>
                 <Route path="/" exact component={HomePage} />
                 <Route path="/contact" component={ContactPage} />
-                <Route path="/products" component={ProductsPage} />
+                <Route path="/products" exact component={ProductsPage} />
                 <Route path="/product/:productId" component={ProductPage} />
+                {/* Diving deeper: product category filter */}
+                <Route path="/products/:category" component={ProductsPage} />
             </Switch>
         </Router>
     );
