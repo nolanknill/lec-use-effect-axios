@@ -4,34 +4,39 @@
         "name": "Camera",
         "description": "This photographer's favourite will help you capture your favourite moments.",
         "icon": "📷",
-        "category": "electronics"
+        "category": "electronics",
+        "technicalSpecs": "18 Megapixels, 4K video recording at 60fps."
     },
     {
         "id": "002",
         "name": "Telescope",
         "description": "Gaze into the cosmos and its many stars, planets and moons. They're far!",
         "icon": "🔭",
-        "category": "gadgets"
+        "category": "gadgets",
+        "technicalSpecs": "5.1 inch aperture, fast f/5 focal ratio."
     },
     {
         "id": "003",
         "name": "Television",
         "description": "Need to kick back and relax? Then this is the big glowing box for you.",
         "icon": "📺",
-        "category": "electronics"
+        "category": "electronics",
+        "technicalSpecs": "8K UHD resolution or 4K at 120Hz, 3 HDMI 2.1 ports."
     },
     {
         "id": "004",
         "name": "Microphone",
         "description": "Make yourself heard in brilliant studio quality. Pairs well with a camera.",
         "icon": "🎙",
-        "category": "electronics"
+        "category": "electronics",
+        "technicalSpecs": "Cardoid polar pattern, 16 ohm impedance monitor output."
     },
     {
         "id": "005",
         "name": "Magnet",
         "description": "Discover the laws of attraction with this polarized piece of metal.",
         "icon": "🧲",
-        "category": "gadgets"
+        "category": "gadgets",
+        "technicalSpecs": "Solid horseshoe shape, 20x20cm (8x8in), 290 grams (10oz)."
     }
 ]

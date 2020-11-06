@@ -1,5 +1,5 @@
 import products from "../../data/products.json";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link, Route } from "react-router-dom";
 
 function ProductPage(props) {
     const product = products.find((product) => product.id === props.match.params.productId);
@@ -15,6 +15,16 @@ function ProductPage(props) {
             <p>{product.description}</p>
             <p>Product ID: {product.id}</p>
             <p>Category: {product.category}</p>
+
+            {/* Diving deeper: Nested route for technical specifications */}
+            <Link to={`/product/${product.id}/technical-specifications`}>
+                See technical specifications
+            </Link>
+
+            <Route path={`/product/${product.id}/technical-specifications`}>
+                <h2>Technical specifications</h2>
+                <p>{product.technicalSpecs}</p>
+            </Route>
         </main>
     );
 }
