@@ -14,11 +14,11 @@ function ProductsPage(props) {
             <p>Check out our many products below! 💰</p>
 
             {/* Diving deeper: product category filter */}
-            <nav>
+            {/* <nav>
                 <Link to="/products">All</Link>
                 <Link to="/products/electronics">Electronics</Link>
                 <Link to="/products/gadgets">Gadgets</Link>
-            </nav>
+            </nav> */}
 
             <ul>
                 {filteredProducts.map((product) => (

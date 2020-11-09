@@ -15,7 +15,7 @@ function App() {
                 <Route path="/products" exact component={ProductsPage} />
                 <Route path="/product/:productId" component={ProductPage} />
                 {/* Diving deeper: product category filter */}
-                <Route path="/products/:category" component={ProductsPage} />
+                {/* <Route path="/products/:category" component={ProductsPage} /> */}
             </Switch>
         </Router>
     );
