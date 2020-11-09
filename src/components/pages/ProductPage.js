@@ -2,7 +2,9 @@ import products from "../../data/products.json";
 import { Redirect, Link, Route } from "react-router-dom";
 
 function ProductPage(props) {
-    const product = products.find((product) => product.id === props.match.params.productId);
+    const { productId } = props.match.params;
+
+    const product = products.find((product) => product.id === productId);
 
     // Redirect to Products page if no product found instead of erroring
     if (!product) return <Redirect to="/products" />;
