@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import products from "../../data/products.json";
 
-function ProductsPage(props) {
-    const { category } = props.match.params;
-
-    const filteredProducts = category
-        ? products.filter((product) => product.category === category)
-        : products;
+function ProductsPage() {
+    // Diving deeper: product category filter
+    // const { category } = props.match.params;
+    // const filteredProducts = category
+    //     ? products.filter((product) => product.category === category)
+    //     : products;
 
     return (
         <main>
@@ -21,7 +21,7 @@ function ProductsPage(props) {
             </nav> */}
 
             <ul>
-                {filteredProducts.map((product) => (
+                {products.map((product) => (
                     <li key={product.id}>
                         <Link to={"/product/" + product.id}>{product.name}</Link>
                     </li>
