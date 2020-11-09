@@ -17,11 +17,9 @@ function ProductPage({ match }) {
             <p>Category: {product.category}</p>
 
             {/* Nested route for technical specifications */}
-            <Link to={`${match.url}/${product.id}/technical-specifications`}>
-                See technical specifications
-            </Link>
+            <Link to={`${match.url}/technical-specifications`}>See technical specifications</Link>
 
-            <Route path={`${match.url}/${product.id}/technical-specifications`}>
+            <Route path={`${match.url}/technical-specifications`}>
                 <h2>Technical specifications</h2>
                 <p>{product.technicalSpecs}</p>
             </Route>
