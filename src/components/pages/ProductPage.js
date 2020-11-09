@@ -1,10 +1,8 @@
 import products from "../../data/products.json";
 import { Redirect, Link, Route } from "react-router-dom";
 
-function ProductPage(props) {
-    const { productId } = props.match.params;
-
-    const product = products.find((product) => product.id === productId);
+function ProductPage({ match }) {
+    const product = products.find((product) => product.id === match.params.productId);
 
     // Redirect to Products page if no product found instead of erroring
     if (!product) return <Redirect to="/products" />;
@@ -19,11 +17,11 @@ function ProductPage(props) {
             <p>Category: {product.category}</p>
 
             {/* Nested route for technical specifications */}
-            <Link to={`/product/${product.id}/technical-specifications`}>
+            <Link to={`${match.url}/${product.id}/technical-specifications`}>
                 See technical specifications
             </Link>
 
-            <Route path={`/product/${product.id}/technical-specifications`}>
+            <Route path={`${match.url}/${product.id}/technical-specifications`}>
                 <h2>Technical specifications</h2>
                 <p>{product.technicalSpecs}</p>
             </Route>
