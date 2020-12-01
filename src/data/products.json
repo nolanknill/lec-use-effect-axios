@@ -2,10 +2,10 @@
     {
         "id": "001",
         "name": "Camera",
-        "description": "This photographer's favourite will help you capture your favourite moments.",
+        "description": "This photographer's friend will help you capture your best moments.",
         "icon": "📷",
         "category": "electronics",
-        "technicalSpecs": "18 Megapixels, 4K video recording at 60fps."
+        "technicalSpecs": "18 megapixels, 4K video recording at 60fps."
     },
     {
         "id": "002",
@@ -29,7 +29,7 @@
         "description": "Make yourself heard in brilliant studio quality. Pairs well with a camera.",
         "icon": "🎙",
         "category": "electronics",
-        "technicalSpecs": "Cardoid polar pattern, 16 ohm impedance monitor output."
+        "technicalSpecs": "Cardioid polar pattern, 16 ohm impedance monitor output."
     },
     {
         "id": "005",
@@ -37,6 +37,6 @@
         "description": "Discover the laws of attraction with this polarized piece of metal.",
         "icon": "🧲",
         "category": "gadgets",
-        "technicalSpecs": "Solid horseshoe shape, 20x20cm (8x8in), 290 grams (10oz)."
+        "technicalSpecs": "Solid horseshoe shape, 8x8in (20x20cm), 10oz (290 grams)."
     }
 ]
