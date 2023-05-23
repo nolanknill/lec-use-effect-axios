@@ -30,6 +30,11 @@ function Header() {
                             Products
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink className={navLinkActive} to="/add-product">
+                            Add a product
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>

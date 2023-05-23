@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import ProductPage from "./pages/ProductPage";
 import ProductsPage from "./pages/ProductsPage";
+import AddProductPage from "./pages/AddProductPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Header from "./components/Header";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="contact" element={<ContactPage username={username}/>} />
         <Route path="products" element={<ProductsPage />} /> 
         <Route path="products/:productId" element={<ProductPage />} /> 
+        <Route path="add-product" element={<AddProductPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
